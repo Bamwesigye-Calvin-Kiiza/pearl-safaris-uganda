@@ -20,3 +20,9 @@ def signUp_page(request):
 def users_list(request):
     user = User.objects.all
     return render(request,'pearlsafaris/userlist.html',{'users':user})
+
+def landingpage(request):
+    return render(request,'pearlsafaris/landingpage.html',{'welcome':'Hello there!'})
+
+def creat_user_account(request):
+    return render(request,'pearlsafaris/createuser.html',{})
